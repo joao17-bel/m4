@@ -1,33 +1,45 @@
 body {
-    font-family: Arial, sans-serif;
-    background: #f2f2f2;
-    padding: 30px;
-    max-width: 600px;
-    margin: auto;
-  }
-  
-  h1 {
-    color: #333;
-  }
-  
-  input, button {
-    padding: 10px;
-    font-size: 1rem;
-    margin: 5px 0;
-  }
-  
-  button {
-    background-color: #2c7;
-    color: white;
-    border: none;
-    cursor: pointer;
-  }
-  
-  .resultado {
-    background: white;
-    padding: 20px;
-    margin-top: 20px;
-    border-radius: 10px;
-    box-shadow: 0 0 10px #ccc;
-  }
-  
+  font-family: Arial, sans-serif;
+  background: #f2f2f2;
+  padding: 30px;
+  max-width: 700px;
+  margin: 20px auto;
+  color: #333;
+}
+
+h1, h2 {
+  color: #2c7;
+}
+
+input, select, button {
+  padding: 10px;
+  font-size: 1rem;
+  margin: 5px 0;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+button {
+  background-color: #2c7;
+  color: white;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #1e5f3d;
+}
+
+.resultado {
+  background: white;
+  padding: 20px;
+  margin-top: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px #ccc;
+  display: none;
+  max-height: 400px;
+  overflow-y: auto;
+}

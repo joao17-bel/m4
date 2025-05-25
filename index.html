@@ -2,19 +2,36 @@
 <html lang="pt-br">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Consulta de IDH por Município</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Consulta IDH - Frontend</title>
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
 
-  <h1>Consultar IDH por Município</h1>
-  <label for="municipioId">Código do Município (IBGE):</label><br/>
-  <input type="text" id="municipioId" placeholder="Ex: 3550308"/><br/>
-  <button onclick="consultarIDH()">Consultar</button>
+  <h1>Consulta IDH por Município</h1>
+
+  <label for="municipioId">Código do Município (IBGE):</label><br />
+  <input type="text" id="municipioId" placeholder="Ex: 3550308" />
+  <button onclick="consultarPorId()">Consultar por ID</button>
+
+  <hr />
+
+  <h2>Listar municípios por UF</h2>
+  <select id="ufSelect">
+    <option value="">Selecione uma UF</option>
+    <option value="SP">SP</option>
+    <option value="MA">MA</option>
+    <option value="RS">RS</option>
+  </select>
+  <button onclick="consultarPorUF()">Consultar por UF</button>
+
+  <hr />
+
+  <h2>Top 10 municípios por IDH</h2>
+  <button onclick="consultarTop10()">Mostrar Top 10</button>
 
   <div class="resultado" id="resultado" style="display: none;"></div>
 
-  <script src="script.js"></script>
+  <script src="API/index.js"></script>
 </body>
 </html>
