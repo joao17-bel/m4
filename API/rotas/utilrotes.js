@@ -6,11 +6,11 @@ const app = express();
 const PORT = 3000;
 
 // Serve arquivos estáticos da pasta 'public'
-app.use(express.static(path.join(__dirname, "public")));
+app.use(express.static(path.join(__dirname, "..","..")));
 
 // Função para ler os dados do arquivo JSON
 function lerDados() {
-  const filePath = path.join(__dirname,"API", "rotas", "dados.json");
+  const filePath = path.join(__dirname,"..","dados.json");
   const rawData = fs.readFileSync(filePath, "utf8");
   return JSON.parse(rawData);
 }
