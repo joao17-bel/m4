@@ -1,0 +1,58 @@
+{
+  "municipios": [
+    {
+      "id": "3550308",
+      "nome": "São Paulo",
+      "uf": "SP",
+      "idh": {
+        "ano": 2020,
+        "valor": 0.805,
+        "classificacao": "Alto"
+      },
+      "ranking_nacional": 5,
+      "educacao": {
+        "ensino_basico": 98.2,
+        "ensino_medio": 89.5,
+        "ensino_superior": 42.1
+      },
+      "saneamento": "bom",
+      "saude": "acesso amplo"
+    },
+    {
+      "id": "2111070",
+      "nome": "Marajá do Sena",
+      "uf": "MA",
+      "idh": {
+        "ano": 2020,
+        "valor": 0.552,
+        "classificacao": "Muito Baixo"
+      },
+      "ranking_nacional": 5570,
+      "educacao": {
+        "ensino_basico": 67.3,
+        "ensino_medio": 32.1,
+        "ensino_superior": 3.5
+      },
+      "saneamento": "muito baixo",
+      "saude": "precária"
+    },
+    {
+      "id": "4305108",
+      "nome": "Caxias do Sul",
+      "uf": "RS",
+      "idh": {
+        "ano": 2020,
+        "valor": 0.765,
+        "classificacao": "Alto"
+      },
+      "ranking_nacional": 45,
+      "educacao": {
+        "ensino_basico": 96.5,
+        "ensino_medio": 85.0,
+        "ensino_superior": 33.0
+      },
+      "saneamento": "adequado",
+      "saude": "acesso razoável"
+    }
+  ]
+}
